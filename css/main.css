@@ -5,16 +5,14 @@ header
   background-color: #191818;
 }
 
-body{
-  background-color: #1E1E1E;
-  margin: 0;
-}
+
+
 
 footer{
   position:absolute;
   bottom: 0;
   width:100%;
-  height:100px;
+  height:200px;
   background-color: #191818;
 }
 
@@ -42,7 +40,7 @@ p{
 }
 
 .minilogo{
-  width: 50px;
+  width: 100px;
   position: center;
   margin: 0;
 }
