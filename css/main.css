@@ -122,3 +122,39 @@ hr {
   height: 3px;
   background-color: #f1f1f1;
   width: 100px;}
+
+.rectangle{
+  width:350px;
+  height: 194.5px;
+  background: #202733;
+  position: fixed;
+  top: 68%;
+}
+
+#r1{
+  left: 10%;
+}
+#r2{
+  left: 40%;
+}
+#r3{
+  left: 70%;
+}
+
+.projet{
+  font-size: 25px;
+  position: fixed;
+  top: 91%;
+  color: #f1f1f1;
+  font-weight: 100;
+}
+
+#p1{
+  left: 16%;
+}
+#p2{
+  left: 46%;
+}
+#p3{
+  left: 76%;
+}
