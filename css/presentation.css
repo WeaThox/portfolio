@@ -1,0 +1,11 @@
+.head{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background: radial-gradient(#2f3e52, #202733);
+  background-color: #202733 !important;
+  color: #fff !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px !important;
+  background-attachment: fixed;
+}
