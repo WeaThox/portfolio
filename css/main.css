@@ -107,8 +107,8 @@ nav a {
   max-width : 13%;
   height : auto;
   position: fixed;
-  left: 29%;
-  top: 13.5%;
+  left: 27%;
+  top: 16%;
   border-radius: 90%;
   border: 5px solid #3BE7FF;
 }
@@ -197,7 +197,7 @@ nav a {
 .home p{
   font-size: 0.8vw;
   position: fixed;
-  top: 14%;
+  top: 13%;
   left: 45%;
   padding: 0;
   margin: 0;
@@ -214,8 +214,8 @@ nav a {
 .home button{
   background-color: #41E8FF;
   position: fixed;
-  top: 44%;
-  left: 51%;
+  top: 47%;
+  left: 60%;
   border: none;
   border-radius: 0.75rem;
   padding: 1rem 1.25rem;
@@ -232,5 +232,12 @@ nav a {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-
+.footer{
+  position: fixed;
+  font-size: 0.8vw;
+  left: 39%;
+  top: 95%;
+  color: #f1f1f1;
+  font-weight: 100;
+}
 
