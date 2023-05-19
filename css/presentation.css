@@ -21,7 +21,7 @@ body {
 
 .competences {
   height: auto;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
   padding-top: 1%;
   margin-top: 8%;
   display: flex;
@@ -30,9 +30,38 @@ body {
   background: #202733 radial-gradient(#1D2A38, #222D3A) fixed;
 }
 
+.footer{
+  height: auto;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #202733 radial-gradient(#1D2A38, #222D3A) fixed;
+}
+
+.contact_body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.footer p{
+  text-align: center;
+  font-size: 0.8em;
+  color: #f1f1f1;
+  font-weight: 100;
+}
+
 .passions {
   height: auto;
-  padding-bottom: 10%;
+  padding-bottom: 1%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -70,13 +99,24 @@ body {
   margin-bottom: 5%;
 }
 
-.passions img{
+
+.contact-item {
+  height: 60px;
+  width: 60px;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #20232b;
+  border-radius: 50%;
   display: flex;
-  width: 25%;
-  height: 70%;
-  min-width: 200px;
-  border-radius: 70%;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-item img{
+  width: 50px;
+  height: 50px;
+  color: #41A3FF;
 }
 
 .language_body{
@@ -84,7 +124,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: 20%;
-  margin-right: 10%;
+  margin-right: 20%;
   margin-top: 5%;
   justify-content: space-around;
   align-content: space-between;
@@ -94,8 +134,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-top: 5%;
   justify-content: space-around;
   align-content: space-between;
@@ -139,8 +179,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-top: 5%;
   justify-content: space-around;
   align-content: space-between;
@@ -166,12 +206,16 @@ h5{
 }
 
 .passions_body p{
-  font-size: 100%;
+  font-size: 80%;
   letter-spacing: 0.05rem;
   word-wrap: break-word;
   padding-right: 5%;
   padding-left: 5%;
   text-align: justify;
+}
+
+.voyage p{
+  font-size: 73%;
 }
 
 .language_title{
@@ -220,6 +264,17 @@ h5{
   border: none;
 }
 
+.footer hr{
+  margin-left: auto;
+  margin-right: auto;
+  height: 3px;
+  width: 3%;
+  background-color: blue;
+  background-image: linear-gradient(45deg, #41E8FF, #41A3FF);
+  background-repeat: repeat;
+  border: none;
+}
+
 .passions hr{
   margin-left: auto;
   margin-right: auto;
@@ -238,6 +293,12 @@ button:hover{
 }
 
 .competences img:hover{
+  transform: scale(1.1);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.contact-item :hover{
   transform: scale(1.1);
   background-position: -60px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -277,7 +338,7 @@ button:hover{
     right: 10%;
     text-align: justify;
   }
-  .home a{
+  a{
     text-decoration: none;
     color: inherit;
   }
@@ -311,7 +372,7 @@ button:hover{
     right: 47%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5%;
+    margin-top: 2%;
   }
   h1{
     font-size: 3vw;
@@ -354,6 +415,15 @@ button:hover{
     margin-left: 3%;
     margin-bottom: 5%;
   }
+  .passions img{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    min-width: 200px;
+    max-height: 210px;
+    border-radius: 70%;
+    margin: auto;
+  }
 }
 
 @media(orientation: portrait) {
@@ -392,7 +462,7 @@ button:hover{
     padding-left: 10%;
     text-align: justify;
   }
-  .home a{
+  a{
     text-decoration: none;
     color: inherit;
   }
@@ -467,5 +537,14 @@ button:hover{
     margin-right: 3%;
     margin-left: 3%;
     margin-bottom: 10%;
+  }
+  .passions img{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    min-width: 150px;
+    max-height: 200px;
+    border-radius: 70%;
+    margin: auto;
   }
 }
