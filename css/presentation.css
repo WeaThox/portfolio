@@ -21,7 +21,7 @@ body {
 
 .competences {
   height: auto;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   padding-top: 1%;
   margin-top: 8%;
   display: flex;
@@ -30,7 +30,14 @@ body {
   background: #202733 radial-gradient(#1D2A38, #222D3A) fixed;
 }
 
-.languages{
+.passions {
+  height: auto;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1%;
+  background: #202733 radial-gradient(#2f3e52, #202733) fixed;
 }
 
 .languages img{
@@ -46,8 +53,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.langues_body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 5%;
   justify-content: space-around;
   align-content: space-between;
@@ -57,13 +75,41 @@ body {
   display: flex;
   flex-direction: column;
   width: 100px;
-  margin-right: 3%;
-  margin-left: 3%;
+  margin-right: 1%;
+  margin-left: 1%;
   margin-bottom: 5%;
+}
+
+.logiciels img{
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  position: relative;
+  left: 17%;
+}
+
+.langues img{
+  display: flex;
+  width: 90px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.logiciels_body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  justify-content: space-around;
+  align-content: space-between;
 }
 
 h3{
   text-align: center;
+  font-size: x-large;
 }
 
 h4{
@@ -77,12 +123,27 @@ h5{
 
 
 .language_title{
-  color: #41A3FF;
+  background: linear-gradient(45deg, #41E8FF, #41A3FF);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 3%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+.langues_titles{
+  background: linear-gradient(45deg, #41E8FF, #41A3FF);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .home hr{
   margin-left: auto;
@@ -106,7 +167,25 @@ h5{
   background-repeat: repeat;
   border: none;
 }
+
+.passions hr{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  height: 3px;
+  width: 5%;
+  background-color: blue;
+  background-image: linear-gradient(45deg, #41E8FF, #41A3FF);
+  background-repeat: repeat;
+  border: none;
+}
 button:hover{
+  transform: scale(1.1);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.competences img:hover{
   transform: scale(1.1);
   background-position: -60px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -162,13 +241,13 @@ button:hover{
     cursor: pointer;
     height: 5vh;
   }
-  .languages a{
+  .github a{
     text-decoration: none;
     color: inherit;
   }
 
-  .languages button{
-    background-color: #41A3FF;
+  .github button{
+    background-color: #41E8FF;
     border: none;
     position: absolute;
     border-radius: 0.75rem;
@@ -177,9 +256,10 @@ button:hover{
     font-weight: 600;
     cursor: pointer;
     height: 5vh;
-    right: 45%;
+    right: 47%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5%;
   }
   h1{
     font-size: 3vw;
@@ -194,6 +274,33 @@ button:hover{
     color: #f1f1f1;
     font-weight: 100;
     border-color: #3BE7FF;
+  }
+
+  .passions_title{
+    font-size: 1vw;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 100;
+    border-color: #3BE7FF;
+  }
+
+  .logiciels_title{
+    background: linear-gradient(45deg, #41E8FF, #41A3FF);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logiciels_body div{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 5%;
   }
 }
 
@@ -252,13 +359,13 @@ button:hover{
     margin-right: auto;
   }
 
-  .languages a{
+  .github a{
     text-decoration: none;
     color: inherit;
   }
 
-  .languages button{
-    background-color: #41A3FF;
+  .github button{
+    background-color: #41E8FF;
     border: none;
     border-radius: 0.75rem;
     padding: 1rem 1.25rem;
@@ -269,6 +376,7 @@ button:hover{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10%;
   }
   h1{
     font-size: xx-large;
@@ -283,5 +391,29 @@ button:hover{
     color: #f1f1f1;
     font-weight: 100;
     border-color: #3BE7FF;
+  }
+  .passions_title{
+    font-size: large;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 100;
+    border-color: #3BE7FF;
+  }
+
+  .logiciels_title{
+    margin-top: 17%;
+    color: #41A3FF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+  .logiciels_body div{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 10%;
   }
 }
