@@ -12,6 +12,20 @@ body {
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #414141;
+  border-radius: 20px;
+  border: 3px solid #414141;
+}
+
 .home {
   height: 5%;
   display: flex;
