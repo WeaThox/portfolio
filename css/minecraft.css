@@ -5,20 +5,60 @@ body {
   background: #202733 radial-gradient(#2f3e52, #202733) fixed;
 }
 
-.head img{
-  width: 530px;
-  height: 292px;
+.images img{
   border-radius: 5%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#main{
+  width: 27%;
+  height: 15%;
+  min-height: 150px;
+  min-width: 270px;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+#quetes{
+  transform : rotate(-8deg);
+  width: 30%;
+  height: 50%;
+  min-height: 100px;
+  min-width: 330px;
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+
+#classement{
+  transform : rotate(10deg);
+  width: 29%;
+  height: 13%;
+  min-height: 100px;
+  min-width: 300px;
+  margin-top: 6%;
+  margin-bottom: 3%;
 }
 
 .head{
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.images img{
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 1%;
 }
+
 
 .page{
   height: 5%;
@@ -50,12 +90,11 @@ button{
   font-weight: 600;
   cursor: pointer;
   height: 5vh;
-  margin-top: 1.5%;
+  margin-top: 0.5%;
 }
 
 .body{
   display: flex;
-  margin-top: 0.5%;
   flex-direction: column;
 }
 .footer{
@@ -144,12 +183,18 @@ h2{
 }
 
 p{
-  margin-top: 1%;
+  margin-top: 0.5%;
   letter-spacing: 0.05rem;
   word-wrap: break-word;
   font-size: 90%;
   padding-right: 5%;
   text-align: justify;
+}
+
+button:hover{
+  transform: scale(1.1);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 @media(orientation: landscape) {
