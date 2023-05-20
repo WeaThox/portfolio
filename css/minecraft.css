@@ -5,6 +5,12 @@ body {
   background: #202733 radial-gradient(#2f3e52, #202733) fixed;
 }
 
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .images img{
   border-radius: 5%;
   margin-left: auto;
@@ -61,14 +67,12 @@ body {
 
 
 .page{
-  height: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .retour{
-  height: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -90,7 +94,8 @@ button{
   font-weight: 600;
   cursor: pointer;
   height: 5vh;
-  margin-top: 0.5%;
+  margin-top: 1%;
+  margin-bottom: 10%;
 }
 
 .body{
@@ -98,20 +103,17 @@ button{
   flex-direction: column;
 }
 .footer{
-  height: auto;
-  padding-bottom: 1%;
+  height: 5%;
+  margin-top: 7%;
   padding-top: 1%;
-  width: 100%;
+  padding-bottom: 0.5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: #202733 radial-gradient(#1D2A38, #222D3A) fixed;
-  text-align: center;
-  font-size: 0.8em;
-  color: #f1f1f1;
-  font-weight: 100;
 }
-.footer p{
+
+.footer p {
   text-align: center;
   font-size: 0.8em;
   color: #f1f1f1;
@@ -166,6 +168,11 @@ button{
   align-items: center;
   text-align: center;
 }
+h3 {
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 0;
+}
 .contact_body{
   display: flex;
   flex-wrap: wrap;
@@ -178,12 +185,14 @@ button{
   align-content: space-between;
 }
 
+
 h2{
+  margin-top: 5%;
   margin-bottom: 0;
 }
 
-p{
-  margin-top: 0.5%;
+.body p{
+  margin-top: 2%;
   letter-spacing: 0.05rem;
   word-wrap: break-word;
   font-size: 90%;
@@ -211,6 +220,18 @@ button:hover{
   transform: scale(1.1);
   background-position: -60px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.footer hr {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  height: 3px;
+  width: 3%;
+  background-color: blue;
+  background-image: linear-gradient(45deg, #41E8FF, #41A3FF);
+  background-repeat: repeat;
+  border: none;
 }
 
 
