@@ -354,7 +354,7 @@ button:hover{
     background: #202733 radial-gradient(#1D2A38, #222D3A) fixed;
   }
   .body p {
-    font-size: 0.8vmax;
+    font-size: 0.744vmax;
     letter-spacing: 0.05rem;
     word-wrap: break-word;
     padding-right: 2%;
